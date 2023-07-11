@@ -1,0 +1,9 @@
+{
+  "labels": {
+    "first_name": "Vorname:",
+    "last_name": "Nachname:",
+    "email": "E-mail:",
+    "phone": "Telefonnummer:",
+    "submit": "Absenden"
+  }
+}
