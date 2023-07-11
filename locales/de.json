@@ -5,5 +5,9 @@
     "email": "E-mail:",
     "phone": "Telefonnummer:",
     "submit": "Absenden"
+  },
+  "instructions": {
+    "instructions_title": "Bitte geben Sie Ihre Daten ein",
+    "instructions_detail": "So können wir das perfekte Paket für Sie zusammenstellen"
   }
 }

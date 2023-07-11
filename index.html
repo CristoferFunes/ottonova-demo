@@ -8,29 +8,83 @@
 </head>
 <body>
 	<main>
-    <nav>
-      
-      <select id="language" onchange="changeLanguage()">
+    <nav class="top_navbar">
+      <img class="top_navbar_logo" src="./assets/images/Wortmarke/logo_ottonova_wortmarke_blue_azure_RGB.png" alt="Ottonova logo">
+      <select class="top_navbar_language_selection" id="language" onchange="changeLanguage()">
         <option value="de">Deutsch</option>
         <option value="en">English</option>
         <option value="es">Español</option>
       </select>
     </nav>
-		<form>
-      <label for="first_name" id="first_name_label">Vorname:</label>
-			<input type="text" id="first_name" required />
-      <label for="last_name" id="last_name_label">Nachname:</label>
-			<input type="text" id="last_name" required />
-      <label for="email" id="email_label">E-mail:</label>
-			<input type="email" id="email" required />
-      <label for="phone" id="phone_label">Telefonnummer</label>
-			<input type="tel" id="phone" required />
-      <label for="gender" id="gender_m_label">Macho</label>
-      <input type="radio" name="gender" id="gender_m" value="male">
-      <label for="gender" id="gender_f_label">Hembra</label>
-      <input type="radio" name="gender" id="gender_f" value="female">
-			<input type="submit" name="submit" id="submit" value="Absenden"/>
-		</form>
+    <div class="first_proposal">
+      <form class="first_form">
+        <h1 id="instructions_title" class="first_instructions_title">Bitte geben Sie Ihre Daten ein</h1>
+        <h2 id="instructions_detail" class="first_instructions_detail">So können wir das perfekte Paket für Sie zusammenstellen</h2>
+        <div class="first_input_section">
+          <div class="first_input_block">
+            <label for="first_name" name="first_name_label" id="first_name_label" class="first_input_label">Vorname:</label>
+            <input type="text" id="first_name" required class="first_input_box"/>
+          </div>
+          <div class="first_input_block">
+            <label for="last_name" name="last_name_label" id="last_name_label" class="first_input_label">Nachname:</label>
+            <input type="text" id="last_name" required class="first_input_box"/>
+          </div>
+        </div>
+        <div class="first_input_section">
+          <div class="first_input_block">
+            <label for="email" id="email_label" name="email_label" class="first_input_label">E-mail:</label>
+            <input type="email" id="email" required class="first_input_box"/>
+          </div>
+          <div class="first_input_block">
+            <label for="phone" id="phone_label" name="phone_label" class="first_input_label">Telefonnummer</label>
+            <input type="tel" id="phone" required class="first_input_box"/>
+          </div>
+        </div>
+        <div class="first_gender_secction">
+          <label for="gender" id="gender_m_label">Macho</label>
+          <input type="radio" name="gender" id="gender_m" value="male">
+          <label for="gender" id="gender_f_label">Hembra</label>
+          <input type="radio" name="gender" id="gender_f" value="female">
+        </div>
+        <input class="first_submit" type="submit" name="submit" id="submit" value="Absenden"/>
+      </form>
+    </div>
+    <div class="break_line"></div>
+    <div class="second_proposal">
+      <form>
+        <label for="first_name" id="first_name_label" name="first_name_label">Vorname:</label>
+        <input type="text" id="first_name" required />
+        <label for="last_name" id="last_name_label" name="last_name_label">Nachname:</label>
+        <input type="text" id="last_name" required />
+        <label for="email" id="email_label" name="email_label">E-mail:</label>
+        <input type="email" id="email" required />
+        <label for="phone" id="phone_label" name="phone_label">Telefonnummer</label>
+        <input type="tel" id="phone" required />
+        <label for="gender" id="gender_m_label">Macho</label>
+        <input type="radio" name="gender" id="gender_m" value="male">
+        <label for="gender" id="gender_f_label">Hembra</label>
+        <input type="radio" name="gender" id="gender_f" value="female">
+        <input type="submit" name="submit" id="submit" value="Absenden"/>
+      </form>
+    </div>
+    <div class="break_line"></div>
+    <div class="third_proposal">
+      <form>
+        <label for="first_name" id="first_name_label" name="first_name_label">Vorname:</label>
+        <input type="text" id="first_name" required />
+        <label for="last_name" id="last_name_label" name="last_name_label">Nachname:</label>
+        <input type="text" id="last_name" required />
+        <label for="email" id="email_label" name="email_label">E-mail:</label>
+        <input type="email" id="email" required />
+        <label for="phone" id="phone_label" name="phone_label">Telefonnummer</label>
+        <input type="tel" id="phone" required />
+        <label for="gender" id="gender_m_label">Macho</label>
+        <input type="radio" name="gender" id="gender_m" value="male">
+        <label for="gender" id="gender_f_label">Hembra</label>
+        <input type="radio" name="gender" id="gender_f" value="female">
+        <input type="submit" name="submit" id="submit" value="Absenden"/>
+      </form>
+    </div>
 	</main>
   <script src="./src/index.js"></script>
 </body>

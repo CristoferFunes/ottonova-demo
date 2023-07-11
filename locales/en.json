@@ -5,5 +5,9 @@
     "email": "Email:",
     "phone": "Phone number:",
     "submit": "Submit"
+  },
+  "instructions": {
+    "instructions_title": "Please introduce your information",
+    "instructions_detail": "This allows us to tailor-made the perfect package for you"
   }
 }
