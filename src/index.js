@@ -19,16 +19,16 @@ const changeLanguage = () => {
 
 
 
-const animateStick = (selected) => {
-  const stickContainer = document.querySelector(`#${selected.id}_label .first_stick_figure`).children;
-  Array.from(stickContainer).forEach(child => {
-    child.style.animationDuration = "1000ms";
-    child.style.animationName = 'wave';
+const animateStick = () => {
+  const options = document.querySelectorAll('.first_radio_button')
+  Array.from(options).forEach(option => {
+    const stickContainer = document.querySelectorAll(`#${option.id}_label .first_stick_figure *`);
+    Array.from(stickContainer).forEach(child => {
+      if(option.checked){
+        child.classList.add(`activated_${child.classList[0]}`);
+        return;
+      }
+      child.classList.remove(`activated_${child.classList[0]}`);
+    });
   });
-  /*var stickFigure = radioButton.parentElement.querySelector('.stick-figure');
-  if (radioButton.checked) {
-    stickFigure.style.animationName = 'wave';
-  } else {
-    stickFigure.style.animationName = 'none';
-  }*/
 }

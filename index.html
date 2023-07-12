@@ -41,6 +41,7 @@
           </div>
         </div>
         <div class="first_gender_secction">
+          <input class="first_radio_button" type="radio" name="gender" id="gender_m" value="male" onchange="animateStick()">
           <label class="first_gender_label" for="gender_m" id="gender_m_label">
             <span class="first_stick_figure">
               <span class="head"></span>
@@ -48,24 +49,21 @@
               <span class="leg_l"></span>
               <span class="leg_r"></span>
               <span class="arm_l"></span>
-              <span class="arm_r1"></span>
-              <span class="arm_r2"></span>
+              <span class="arm_r1"><span class="arm_r2"></span></span>
             </span>
           </label>
           <span class="first_gender_divide"></span>
-          <input class="first_radio_button" type="radio" name="gender" id="gender_m" value="male" onchange="animateStick(this)">
+          <input class="first_radio_button" type="radio" name="gender" id="gender_f" value="female" onchange="animateStick()">
           <label class="first_gender_label" for="gender_f" id="gender_f_label">
             <span class="first_stick_figure">
               <span class="head"></span>
-              <span class="torso"></span>
+              <span class="torso rock"></span>
               <span class="leg_l"></span>
               <span class="leg_r"></span>
-              <span class="arm_l"></span>
-              <span class="arm_r1"></span>
-              <span class="arm_r2"></span>
+              <span class="arm_l rock_arm_l"></span>
+              <span class="arm_r1 rock_arm_r"><span class="arm_r2"></span></span>
             </span>
           </label>
-          <input class="first_radio_button" type="radio" name="gender" id="gender_f" value="female" onchange="animateStick(this)">
         </div>
         <input class="first_submit" type="submit" name="submit" id="submit" value="Absenden"/>
       </form>

@@ -7,6 +7,7 @@
   --business_secondary_color: #00104b;
   --background_color: rgb(255, 255, 255);
   --first_background_color: #f2f3f6;
+  --animation_duration: 300ms;
 }
 
 body{
@@ -180,6 +181,11 @@ main{
   position: relative;
 }
 
+input.first_radio_button[type="radio"]:checked + .first_gender_label .first_stick_figure{
+  background-color: var(--business_primary_color);
+}
+
+
 .first_stick_figure .head{
   position: absolute;
   top: 0.6rem;
@@ -188,6 +194,7 @@ main{
   width: 0.6rem;
   border-radius: 0.6rem;
   background-color: white;
+  transition: var(--animation_duration);
 }
 
 .first_stick_figure .torso{
@@ -198,7 +205,14 @@ main{
   width: 0.5rem;
   border-radius: 0.2rem;
   background-color: white;
-  transition: 500ms;
+  transition: var(--animation_duration);
+  transform-origin: 50% 100%;
+}
+
+.first_stick_figure .rock{
+  height: 1.3rem;
+  width: 1rem;
+  clip-path: polygon(35% 0, 65% 0, 100% 100%, 0% 100%);
 }
 
 .first_stick_figure .leg_l{
@@ -209,6 +223,7 @@ main{
   width: 0.15rem;
   border-radius: 0.2rem;
   background-color: white;
+  transition: var(--animation_duration);
 }
 
 .first_stick_figure .leg_r{
@@ -219,6 +234,7 @@ main{
   width: 0.15rem;
   border-radius: 0.2rem;
   background-color: white;
+  transition: var(--animation_duration);
 }
 
 .first_stick_figure .arm_l{
@@ -229,6 +245,8 @@ main{
   width: 0.15rem;
   border-radius: 0.2rem;
   background-color: white;
+  transition: var(--animation_duration);
+  transform-origin: 50% 0%;
 }
 
 .first_stick_figure .arm_r1{
@@ -239,28 +257,47 @@ main{
   width: 0.15rem;
   border-radius: 0.2rem;
   background-color: white;
+  transition: var(--animation_duration);
+  transform-origin: 50% 0%;
 }
 
 .first_stick_figure .arm_r2{
   position: absolute;
-  top: 1.85rem;
-  left: calc(50% + 0.3rem);
+  top: 0.55rem;
   height: 0.55rem;
   width: 0.15rem;
   border-radius: 0.2rem;
   background-color: white;
+  transition: var(--animation_duration);
+  transform-origin: 50% 0%;
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+.rock_arm_l{
+  transform: rotate(14deg);
+}
+
+.rock_arm_r{
+  transform: rotate(-14deg);
+}
+
+.activated_head{
+  transform: translate(-2px)
+}
+
+.activated_torso{
+  transform: rotate(-5deg);
+}
+
+.activated_arm_l{
+  transform: translate(-2px, 1px)
+}
+
+.activated_arm_r1{
+  transform: rotate(-120deg) translate(0px, -1px);
+}
+
+.activated_arm_r2{
+  transform: rotate(-20deg);
 }
 
 .first_radio_button{
