@@ -129,22 +129,142 @@ main{
 
 .first_input_box:focus{
   outline: none;
-  border: 1px solid rgba(0, 16, 75, 0.5);
+  border: 1px solid var(--business_primary_color);
 }
 
 .first_input_label{
-  color: var(--business_secondary_color);
+  color: #6c769b;
   display: block;
   background-clip: content-box;
   position: absolute;
   left: 0;
+  top: 0;
   font-weight: bold;
   transform: translateX(1rem) translateY(1rem);
   transition: 200ms;
 }
 
-.first_input_box:focus ~ .first_input_label{
-  color: red
+.first_input_box:focus ~ .first_input_label,
+.first_input_box:valid ~ .first_input_label{
+  transform: translateX(0rem) translateY(0rem) scale(0.7);
+  color: var(--business_secondary_color);
+}
+
+.first_gender_secction{
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.first_gender_label{
+  width:50%;
+}
+
+.first_gender_divide{
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  color: rgba(136, 136, 136, 0.3);
+}
+
+.first_stick_figure{
+  display: grid;
+  height: 4rem;
+  width: 100%;
+  background-color: #6c769b;
+  position: relative;
+}
+
+.first_stick_figure .head{
+  position: absolute;
+  top: 0.6rem;
+  left: calc(50% - 0.3rem);
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: white;
+}
+
+.first_stick_figure .torso{
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  height: 1.3rem;
+  width: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: white;
+  transition: 500ms;
+}
+
+.first_stick_figure .leg_l{
+  position: absolute;
+  bottom: 0.5rem;
+  left: calc(50% - 0.25rem);
+  height: 0.9rem;
+  width: 0.15rem;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+.first_stick_figure .leg_r{
+  position: absolute;
+  bottom: 0.5rem;
+  left: calc(50% + 0.1rem);
+  height: 0.9rem;
+  width: 0.15rem;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+.first_stick_figure .arm_l{
+  position: absolute;
+  top: 1.3rem;
+  left: calc(50% - 0.5rem);
+  height: 1.1rem;
+  width: 0.15rem;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+.first_stick_figure .arm_r1{
+  position: absolute;
+  top: 1.3rem;
+  left: calc(50% + 0.3rem);
+  height: 0.55rem;
+  width: 0.15rem;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+.first_stick_figure .arm_r2{
+  position: absolute;
+  top: 1.85rem;
+  left: calc(50% + 0.3rem);
+  height: 0.55rem;
+  width: 0.15rem;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.first_radio_button{
+  display: none;
 }
 
 .second_proposal{

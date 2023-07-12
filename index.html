@@ -17,34 +17,55 @@
       </select>
     </nav>
     <div class="first_proposal">
-      <form class="first_form">
-        <h1 id="instructions_title" class="first_instructions_title">Bitte geben Sie Ihre Daten ein</h1>
-        <h2 id="instructions_detail" class="first_instructions_detail">So können wir das perfekte Paket für Sie zusammenstellen</h2>
+      <form class="first_form" name="first_form">
+        <h1 id="instructions_title" class="first_instructions_title" name="instructions_title">Bitte geben Sie Ihre Daten ein</h1>
+        <h2 id="instructions_detail" class="first_instructions_detail" name="instructions_detail">So können wir das perfekte Paket für Sie zusammenstellen</h2>
         <div class="first_input_section">
           <div class="first_input_block">
-            <label for="first_name" name="first_name_label" id="first_name_label" class="first_input_label">Vorname:</label>
             <input type="text" id="first_name" required class="first_input_box"/>
+            <label for="first_name" name="first_name_label" id="first_name_label" class="first_input_label">Vorname:</label>
           </div>
           <div class="first_input_block">
-            <label for="last_name" name="last_name_label" id="last_name_label" class="first_input_label">Nachname:</label>
             <input type="text" id="last_name" required class="first_input_box"/>
+            <label for="last_name" name="last_name_label" id="last_name_label" class="first_input_label">Nachname:</label>
           </div>
         </div>
         <div class="first_input_section">
           <div class="first_input_block">
-            <label for="email" id="email_label" name="email_label" class="first_input_label">E-mail:</label>
             <input type="email" id="email" required class="first_input_box"/>
+            <label for="email" id="email_label" name="email_label" class="first_input_label">E-mail:</label>
           </div>
           <div class="first_input_block">
-            <label for="phone" id="phone_label" name="phone_label" class="first_input_label">Telefonnummer</label>
             <input type="tel" id="phone" required class="first_input_box"/>
+            <label for="phone" id="phone_label" name="phone_label" class="first_input_label">Telefonnummer</label>
           </div>
         </div>
         <div class="first_gender_secction">
-          <label for="gender" id="gender_m_label">Macho</label>
-          <input type="radio" name="gender" id="gender_m" value="male">
-          <label for="gender" id="gender_f_label">Hembra</label>
-          <input type="radio" name="gender" id="gender_f" value="female">
+          <label class="first_gender_label" for="gender_m" id="gender_m_label">
+            <span class="first_stick_figure">
+              <span class="head"></span>
+              <span class="torso"></span>
+              <span class="leg_l"></span>
+              <span class="leg_r"></span>
+              <span class="arm_l"></span>
+              <span class="arm_r1"></span>
+              <span class="arm_r2"></span>
+            </span>
+          </label>
+          <span class="first_gender_divide"></span>
+          <input class="first_radio_button" type="radio" name="gender" id="gender_m" value="male" onchange="animateStick(this)">
+          <label class="first_gender_label" for="gender_f" id="gender_f_label">
+            <span class="first_stick_figure">
+              <span class="head"></span>
+              <span class="torso"></span>
+              <span class="leg_l"></span>
+              <span class="leg_r"></span>
+              <span class="arm_l"></span>
+              <span class="arm_r1"></span>
+              <span class="arm_r2"></span>
+            </span>
+          </label>
+          <input class="first_radio_button" type="radio" name="gender" id="gender_f" value="female" onchange="animateStick(this)">
         </div>
         <input class="first_submit" type="submit" name="submit" id="submit" value="Absenden"/>
       </form>
