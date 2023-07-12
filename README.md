@@ -1,6 +1,6 @@
 # Ottonova Challenge
 ## Description
-This project showcases a couple of demos for a website. It aims to demonstrate the animation triggers and the requested formular for the challenge
+This project showcases a couple of demos for a website. It aims to demonstrate the animation triggers and the requested form for the challenge
 You can navigate through the demos just by scrolling in the main page.
 
 ## Demos
