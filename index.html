@@ -23,21 +23,21 @@
         <h2 id="instructions_detail" class="first_instructions_detail" name="instructions_detail">So können wir das perfekte Paket für Sie zusammenstellen</h2>
         <div class="first_input_section">
           <div class="first_input_block">
-            <input type="text" id="first_name" required class="first_input_box"/>
-            <label for="first_name" name="first_name_label" id="first_name_label" class="first_input_label">Vorname:</label>
+            <input type="text" id="first_name" name="name" required class="first_input_box"/>
+            <label for="first_name" name="name_label" id="first_name_label" class="first_input_label">Vorname:</label>
           </div>
           <div class="first_input_block">
-            <input type="text" id="last_name" required class="first_input_box"/>
+            <input type="text" id="last_name" name="last_name" required class="first_input_box"/>
             <label for="last_name" name="last_name_label" id="last_name_label" class="first_input_label">Nachname:</label>
           </div>
         </div>
         <div class="first_input_section">
           <div class="first_input_block">
-            <input type="email" id="email" required class="first_input_box"/>
+            <input type="email" id="email" name="email" required class="first_input_box"/>
             <label for="email" id="email_label" name="email_label" class="first_input_label">E-mail:</label>
           </div>
           <div class="first_input_block">
-            <input type="tel" id="phone" required class="first_input_box"/>
+            <input type="tel" id="phone" name="phone" required class="first_input_box"/>
             <label for="phone" id="phone_label" name="phone_label" class="first_input_label">Telefonnummer</label>
           </div>
         </div>
@@ -71,40 +71,66 @@
     </div>
     <div class="break_line" id="second"></div>
     <div class="second_proposal">
-      <form>
-        <label for="first_name" id="first_name_label" name="first_name_label">Vorname:</label>
-        <input type="text" id="first_name" required />
-        <label for="last_name" id="last_name_label" name="last_name_label">Nachname:</label>
-        <input type="text" id="last_name" required />
-        <label for="email" id="email_label" name="email_label">E-mail:</label>
-        <input type="email" id="email" required />
-        <label for="phone" id="phone_label" name="phone_label">Telefonnummer</label>
-        <input type="tel" id="phone" required />
-        <label for="gender" id="gender_m_label">Macho</label>
-        <input type="radio" name="gender" id="gender_m" value="male">
-        <label for="gender" id="gender_f_label">Hembra</label>
-        <input type="radio" name="gender" id="gender_f" value="female">
-        <input type="submit" name="submit" id="submit" value="Absenden"/>
+      <form class="second_form">
+        <h1 name="second_instructions">Erzählen Sie uns in nur drei Schritten von Ihnen</h1>
+        <div class="second_carrousel">
+          <div class="second_section" id="second_first_section">
+            <div class="carrousel_header">
+              <span class="carrousel_circle">1</span>
+              <h2 name="first_step">Wie dürfen wir Sie nennen?</h2>
+            </div>
+            <div class="carrousel_fields_wrapper">
+              <div class="second_input_block">
+                <input type="text" id="second_first_name" class="first_input_box" required />
+                <label for="second_first_name" id="second_first_name_label" name="name_label" class="first_input_label">Vorname:</label>
+              </div>
+              <div class="second_input_block">
+                <input type="text" id="second_last_name" class="first_input_box" required />
+                <label for="second_last_name" id="second_last_name_label" name="last_name_label" class="first_input_label">Nachname:</label>
+              </div>
+            </div>
+            <div class="carrousel_button_section">
+              <div class="nextButton" name="nextButton" onclick="document.getElementById('second_email').focus()">Weiter</div>
+            </div>
+          </div>
+          <div class="second_section" id="second_second_section">
+            <div class="carrousel_header">
+              <span class="carrousel_circle">2</span>
+              <h2 name="second_step">Wie können wir Sie kontaktieren?</h2>
+            </div>
+            <div class="carrousel_fields_wrapper">
+              <div class="second_input_block">
+                <input type="email" id="second_email" class="first_input_box" required />
+                <label for="second_email" id="email_label" class="first_input_label" name="email_label">E-mail:</label>
+              </div>
+              <div class="second_input_block">
+                <input type="tel" id="second_phone"class="first_input_box"  required />
+                <label for="second_phone" id="phone_label"class="first_input_label"  name="phone_label">Telefonnummer</label>
+              </div>
+            </div>
+            <div class="carrousel_button_section">
+              <div class="nextButton" name="nextButton" onclick="document.getElementById('second_gender_m').focus()">Weiter</div>
+            </div> 
+          </div>
+          <div class="second_section" id="second_third_section">
+            <div class="carrousel_header">
+              <span class="carrousel_circle">3</span>
+              <h2 name="third_step">Wählen Sie Ihr gewünschtes Geschlecht</h2>
+            </div>
+            <div class="gender_wrapper">
+              <input type="radio" name="gender" id="second_gender_m" value="male" class="second_gender_input">
+              <label for="second_gender_m" name="gender_m_label" id="gender_m_label" class="second_gender_label">Herr.</label>
+              <input type="radio" name="gender" id="second_gender_f" value="female" class="second_gender_input">
+              <label for="second_gender_f" name="gender_f_label" id="gender_f_label" class="second_gender_label">Frau.</label>
+            </div>
+            <div class="carrousel_button_section">
+              <input class="first_submit" type="submit" name="submit" id="submit" value="Absenden"/>
+            </div>
+          </div>
+        </div> 
       </form>
     </div>
     <div class="break_line"></div>
-    <div class="third_proposal">
-      <form>
-        <label for="first_name" id="first_name_label" name="first_name_label">Vorname:</label>
-        <input type="text" id="first_name" required />
-        <label for="last_name" id="last_name_label" name="last_name_label">Nachname:</label>
-        <input type="text" id="last_name" required />
-        <label for="email" id="email_label" name="email_label">E-mail:</label>
-        <input type="email" id="email" required />
-        <label for="phone" id="phone_label" name="phone_label">Telefonnummer</label>
-        <input type="tel" id="phone" required />
-        <label for="gender" id="gender_m_label">Macho</label>
-        <input type="radio" name="gender" id="gender_m" value="male">
-        <label for="gender" id="gender_f_label">Hembra</label>
-        <input type="radio" name="gender" id="gender_f" value="female">
-        <input type="submit" name="submit" id="submit" value="Absenden"/>
-      </form>
-    </div>
 	</main>
   <script src="./src/index.js"></script>
 </body>

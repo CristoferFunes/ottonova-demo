@@ -7,10 +7,18 @@
     "last_name": "Nachname:",
     "email": "E-mail:",
     "phone": "Telefonnummer:",
-    "submit": "Absenden"
+    "submit": "Absenden",
+    "mr": "Herr.",
+    "mrs": "Frau"
   },
   "instructions": {
     "instructions_title": "Bitte geben Sie Ihre Daten ein",
-    "instructions_detail": "So können wir das perfekte Paket für Sie zusammenstellen"
+    "instructions_detail": "So können wir das perfekte Paket für Sie zusammenstellen",
+    "second_instructions": "Erzählen Sie uns in nur drei Schritten von Ihnen",
+    "first_step": "Wie dürfen wir Sie nennen?",
+    "second_step": "Wie können wir Sie kontaktieren?",
+    "third_step": "Wählen Sie Ihr gewünschtes Geschlecht",
+    "next": "Weiter"
   }
 }
+

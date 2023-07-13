@@ -7,10 +7,17 @@
     "last_name": "Apellido:",
     "email": "Correo:",
     "phone": "Teléfono:",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "mr": "Sr.",
+    "mrs": "Sra."
   },
   "instructions": {
     "instructions_title": "Por favor introduce tus datos",
-    "instructions_detail": "Así podemos crear un paquete justo a tu medida"
+    "instructions_detail": "Así podemos crear un paquete justo a tu medida",
+    "second_instructions": "Cuéntanos sobre ti en solo tres pasos",
+    "first_step": "Cómo podemos llamarte?",
+    "second_step": "Cómo podemos contactarte",
+    "third_step": "Escoge tu género",
+    "next": "Siguiente"
   }
 }

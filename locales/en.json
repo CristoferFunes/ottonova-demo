@@ -7,10 +7,17 @@
     "last_name": "Last name:",
     "email": "Email:",
     "phone": "Phone number:",
-    "submit": "Submit"
+    "submit": "Submit",
+    "mr": "Mr.",
+    "mrs": "Mrs."
   },
   "instructions": {
     "instructions_title": "Please introduce your information",
-    "instructions_detail": "This allows us to tailor-made the perfect package for you"
+    "instructions_detail": "This allows us to tailor-made the perfect package for you",
+    "second_instructions": "Tell us about you in just three steps",
+    "first_step": "How can we address you?",
+    "second_step": "How can we contact you?",
+    "third_step": "Choose your desired gender",
+    "next": "Next"
   }
 }

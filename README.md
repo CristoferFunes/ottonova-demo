@@ -15,6 +15,9 @@ I used Javascript as requested, you can see that the gender selection triggers t
 Description: It's a second proposal, that has more aesthetic elements on the form, still using the colors and tried to match a bit the look and feel from the main
 ottonova website, but this time I focused more on the design.
 
+**Note:**
+Website is still not optimized for mobile browsers
+
 **Contact**
 If you have any questions, suggestions, or feedback, please feel free to reach out to the project maintainer:
 

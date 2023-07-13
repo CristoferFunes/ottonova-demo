@@ -9,6 +9,8 @@
   --first_background_color: #f2f3f6;
   --animation_duration: 300ms;
   --link_color: #697395;
+  --second_background_color: #969cb5;
+  --second_front_color: #f2f3f6;
 }
 
 html{
@@ -22,20 +24,6 @@ body{
   width: 100vw;
   overflow-x: hidden;
 }
-
-/*
-body::-webkit-scrollbar{
-  max-width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track{
-  background: var(--background-color);
-}
-
-body::-webkit-scrollbar-thumb{
-  background: var(--business_primary_color);
-  box-shadow: 0 -100vh 0 100vh var(--business_primary_color)
-}*/
 
 main{
   height: 200vh;
@@ -317,13 +305,136 @@ input.first_radio_button[type="radio"]:checked + .first_gender_label .first_stic
 }
 
 .second_proposal{
-  display: inline-block;
-  margin: var(--main_margin);
+  display: flex;
+  justify-content: center;
+  padding: var(--main_margin);
   height: calc(100vh - var(--navbar_height) - (var(--main_margin)*2));
+  width: calc(100% - (var(--main_margin)*2));
+  background-color: var(--second_background_color);
+
 }
 
-.third_proposal{
-  display: inline-block;
-  margin: var(--main_margin);
-  height: calc(100vh - var(--navbar_height) - (var(--main_margin)*2));
+.second_form{
+  height: 100%;
+  width: 70%;
+  min-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 3rem;
+  box-shadow: 0 0 2rem rgb(94, 94, 94);
+  background-color: var(--second_front_color);
+}
+
+.second_form h1{
+  color: var(--business_secondary_color)
+}
+
+.second_carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.second_carrousel{
+  height: 50%;
+  width: 70%;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgb(94, 94, 94);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.second_section{
+  min-height: 100%;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.carrousel_header{
+  padding-top: 1rem;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carrousel_circle{
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--business_primary_color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carrousel_header h2{
+  color: var(--business_secondary_color);
+  margin-right: 30%;
+}
+
+.carrousel_fields_wrapper{
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carrousel_button_section{
+  height: calc(30% - 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second_input_block{
+  position: relative;
+}
+
+.nextButton{
+  width: 6rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: var(--business_primary_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+}
+
+.gender_wrapper{
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second_gender_label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--link_color);
+  border-radius: 1rem;
+  color:white
+}
+
+.second_gender_input{
+  opacity: 0;
+  pointer-events: none;
+}
+
+input.second_gender_input[type="radio"]:checked + .second_gender_label{
+  background-color: var(--business_primary_color);
 }
