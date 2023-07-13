@@ -5,8 +5,10 @@ const changeLanguage = () => {
   let selectedLanguage = document.getElementById("language").value;
   fetch(`../locales/${selectedLanguage}.json`)
   .then(response => response.json()).then(data => {
+    var navItems = data.nav_controls;
     var languageLabels = data.labels;
     var languageInstructions = data.instructions;
+    document.getElementById("demo2").innerText = navItems.demo2;
     document.getElementsByName("first_name_label").forEach(element => element.innerText = languageLabels.first_name);
     document.getElementsByName("last_name_label").forEach(element => element.innerText = languageLabels.last_name);
     document.getElementsByName("email_label").forEach(element => element.innerText = languageLabels.email);

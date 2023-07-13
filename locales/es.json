@@ -1,4 +1,7 @@
 {
+  "nav_controls": {
+    "demo2": "Click aquí para segunda propuesta"
+  },
   "labels": {
     "first_name": "Nombre:",
     "last_name": "Apellido:",

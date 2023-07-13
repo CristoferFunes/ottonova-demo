@@ -8,6 +8,11 @@
   --background_color: rgb(255, 255, 255);
   --first_background_color: #f2f3f6;
   --animation_duration: 300ms;
+  --link_color: #697395;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body{
@@ -54,10 +59,17 @@ main{
   justify-content: space-between;
   background-color: var(--background_color);
   box-sizing: border-box;
+  z-index: 15;
 }
 
 .top_navbar_logo{
   height: var(--navbar_height);
+}
+
+.nav_link{
+  color: var(--link_color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .top_navbar_language_selection{

@@ -1,4 +1,7 @@
 {
+  "nav_controls": {
+    "demo2": "Klicken Sie für die zweite Demo"
+  },
   "labels": {
     "first_name": "Vorname:",
     "last_name": "Nachname:",
